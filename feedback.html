@@ -8,15 +8,16 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <meta charset=utf-8>
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link rel="stylesheet" href="css/styles-custom.css">
     <link rel="stylesheet" href="css/styles.css">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <!-- Yandex Maps -->
+    <script src="http://api-maps.yandex.ru/2.1-dev/?lang=ru_RU"></script>
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
 </head>
 
 <body>
@@ -42,6 +43,7 @@
                             <li>&nbsp;+38(050)347-76-13</li>
                             <li>&nbsp;+38(050)344-75-16</li>
                             <li>&nbsp;<a href="mailto:mail@mail.ua">mail@mail.ua</a>
+                            </li>
                         </ul>
                     </adress>
                 </div>
@@ -62,47 +64,56 @@
             </div>
         </div>
     </nav>
-    <main role="main">
-        <div class="container">
-            <div class="col-xs-2"></div>
-            <div id="carousel" class="col-xs-8 carousel slide" data-ride="carousel">
-                <!-- Indicators -->
-                <ol class="carousel-indicators">
-                    <li data-target="#carousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#carousel" data-slide-to="1"></li>
-                </ol>
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner">
-                    <div class="item active">
-                        <img class="img-rounded" src="img/carousel/first.jpg" alt="1">
-                        <!--<div class="carousel-caption">
-                    </div>-->
-                    </div>
-                    <div class="item">
-                        <img class="img-rounded" src="img/carousel/second.jpg" alt="2">
-                    </div>
+
+    <main>
+        <div class="container feedback-contacts">
+            <div class="row text-center">
+                <div class="col-xs-4">
+                    Адрес:
+                    <br><strong>г.Киев, пр.Ватутина 6а</strong>
                 </div>
-                <!-- Controls -->
-                <a class="carousel-left-custom carousel-control" href="#carousel" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left"></span>
-                </a>
-                <a class="carousel-right-custom carousel-control" href="#carousel" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right"></span>
-                </a>
+                <div class="col-xs-4">
+                    Телефоны:
+                    <ul class="list-unstyled">
+                        <li><strong>+38(050)347-76-13</strong></li>
+                        <li><strong>+38(044)344-75-16</strong></li>
+                    </ul>
+                </div>
+                <div class="col-xs-4">
+                    E-Mail:
+                    <br>
+                    <a href="mailto:mail@mail.ua"><strong>mail@mail.ua</strong></a>
+                </div>
             </div>
-            <div class="col-xs-2"></div>
         </div>
-        <div class="container">
+        <div id="map-wrapper" class="container">
             <div class="row">
-                <div class="col-xs-2"></div>
-                <div class="col-xs-8">
-                    <p class="lead text-justify mt30">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam semper odio eu tellus hendrerit, in tempus odio vehicula. Integer imperdiet vitae lectus id pharetra. Vivamus eu nunc nec odio pellentesque vestibulum sit amet in enim. Aenean posuere suscipit luctus. Sed risus risus, vulputate at porta a, feugiat in urna. In quis eleifend lacus. Sed risus risus, vulputate at porta a, feugiat in urna. In quis eleifend lacus. Sed risus risus, vulputate at porta a, feugiat.
-                    </p>
-                </div>
-                <div class="col-xs-2"></div>
+                <div class="col-xs-1"></div>
+                <div class="col-xs-10" id="map"></div>
+                <div class="col-xs-1"></div>
             </div>
         </div>
+        <form class="form-group container width50" role="form">
+            <div class="row">
+                <div class="form-group col-xs-6 np">
+                    <label class="sr-only" for="nameInput">Имя</label>
+                    <input class="form-control" id="nameInput" placeholder="Ваше имя">
+                </div>
+                <div class="form-group col-xs-6 np">
+                    <label class="sr-only" for="emailInput">E-Mail</label>
+                    <input type="email" class="form-control" id="emailInput" placeholder="Ваш E-Mail">
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-xs-12 np">
+                    <label class="sr-only" for="mainTextInput">Вопрос</label>
+                    <textarea class="form-control" id="mainTextInput" rows="3" placeholder="Ваш вопрос"></textarea>
+                </div>
+            </div>
+            <div class="row pl15">
+                <button type="submit" class="btn btn-default">Отправить</button>
+            </div>
+        </form>
     </main>
 
     <footer class="footer">
@@ -120,6 +131,7 @@
 
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/ymap.js"></script>
 </body>
 
 </html>
