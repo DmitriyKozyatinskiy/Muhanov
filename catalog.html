@@ -8,16 +8,15 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <meta charset=utf-8>
-    <link rel="stylesheet" href="css/styles-custom.css">
-    <link rel="stylesheet" href="css/styles.css">
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-    <!-- Yandex Maps -->
-    <script src="http://api-maps.yandex.ru/2.1-dev/?lang=ru_RU"></script>
+    <link rel="stylesheet" href="css/styles-custom.css">
+    <link rel="stylesheet" href="css/styles.css">
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+
 </head>
 
 <body>
@@ -43,7 +42,6 @@
                             <li>&nbsp;+38(050)347-76-13</li>
                             <li>&nbsp;+38(050)344-75-16</li>
                             <li>&nbsp;<a href="mailto:mail@mail.ua">mail@mail.ua</a>
-                            </li>
                         </ul>
                     </adress>
                 </div>
@@ -63,55 +61,49 @@
             </div>
     </nav>
 
-    <main>
-        <div class="container feedback-contacts">
-            <div class="row text-center">
-                <div class="col-xs-4">
-                    Адрес:
-                    <br><strong>г.Киев, пр.Ватутина 6а</strong>
+    <main>    
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-3"></div>
+                <div class="col-xs-3 ">
+                    <div class="thumbnail catalog-main pointer">
+                        <img data-src="holder.js/100%x180" src="img/catalog/table.jpg" width=260 alt="Столы">
+                        <div class="caption text-center">
+                            <h3>Столы</h3>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-xs-4">
-                    Телефоны:
-                    <ul class="list-unstyled">
-                        <li><strong>+38(050)347-76-13</strong></li>
-                        <li><strong>+38(044)344-75-16</strong></li>
-                    </ul>
+                <div class="col-xs-3">
+                    <div class="thumbnail catalog-main pointer">
+                        <img data-src="holder.js/100%x180" src="img/catalog/shkaf.jpg" width=260 alt="Шкафы">
+                        <div class="caption text-center">
+                            <h3>Шкафы</h3>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-xs-4">
-                    E-Mail:
-                    <br>
-                    <a href="mailto:mail@mail.ua"><strong>mail@mail.ua</strong></a>
+                <div class="col-xs-3"></div>
+            </div>
+            <div class="row">
+                <div class="col-xs-3"></div>
+                <div class="col-xs-3">
+                    <div class="thumbnail catalog-main pointer">
+                        <img data-src="holder.js/100%x180" src="img/catalog/chair.jpg" alt="Стулья">
+                        <div class="caption text-center">
+                            <h3>Стулья</h3>
+                        </div>
+                    </div>
                 </div>
+                <div class="col-xs-3">
+                    <div class="thumbnail catalog-main pointer">
+                        <img data-src="holder.js/100%x180" src="img/catalog/kitchen.jpg" width=260 alt="Кухни">
+                        <div class="caption text-center">
+                            <h3>Кухни</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-3"></div>
             </div>
         </div>
-        <div id="map-wrapper" class="container">
-            <div class="row">
-                <div class="col-xs-1"></div>
-                <div class="col-xs-10" id="map"></div>
-                <div class="col-xs-1"></div>
-            </div>
-        </div>
-        <form class="form-group container width50" role="form">
-            <div class="row">
-                <div class="form-group col-xs-6 np">
-                    <label class="sr-only" for="nameInput">Имя</label>
-                    <input class="form-control" id="nameInput" placeholder="Ваше имя">
-                </div>
-                <div class="form-group col-xs-6 np">
-                    <label class="sr-only" for="emailInput">E-Mail</label>
-                    <input type="email" class="form-control" id="emailInput" placeholder="Ваш E-Mail">
-                </div>
-            </div>
-            <div class="row">
-                <div class="form-group col-xs-12 np">
-                    <label class="sr-only" for="mainTextInput">Вопрос</label>
-                    <textarea class="form-control" id="mainTextInput" rows="3" placeholder="Ваш вопрос"></textarea>
-                </div>
-            </div>
-            <div class="row pl15">
-                <button type="submit" class="btn btn-default">Отправить</button>
-            </div>
-        </form>
     </main>
 
     <footer class="footer">
@@ -129,7 +121,6 @@
 
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/ymap.js"></script>
 </body>
 
 </html>

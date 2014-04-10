@@ -4,3 +4,5 @@
 .width50{width: 50% !important;}
 .pl15{padding-left: 15px;}
 .np{padding: 0;}
+.nomh{min-height: 0 !important;}
+.pointer{cursor: pointer;}
