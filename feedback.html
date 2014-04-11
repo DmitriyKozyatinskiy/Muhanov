@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Site</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta charset=utf-8>
+    <link rel="stylesheet" href="css/styles-custom.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <!-- Yandex Maps -->
+    <script src="http://api-maps.yandex.ru/2.1-dev/?lang=ru_RU"></script>
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+    <header class="container-fluid">
+        <div class="row">
+            <div class="col-xs-3" id="logo">
+                <a href="#">
+                    <img src="img/logo1.png" class="img-responsive" alt="Site Logo">
+                </a>
+            </div>
+            <div class="col-xs-6 text-center">
+                <h1>Мебельная фирма</h1>
+            </div>
+            <div class="col-xs-3 text-left">
+                <div class="pull-right contacts">
+                    <span>
+                        <strong>Контакты:</strong>
+                    </span>
+                    <br>
+                    <adress>
+                        <ul class="list-unstyled">
+                            <li>&nbsp;+38(050)347-76-13</li>
+                            <li>&nbsp;+38(050)344-75-16</li>
+                            <li>&nbsp;<a href="mailto:mail@mail.ua">mail@mail.ua</a>
+                            </li>
+                        </ul>
+                    </adress>
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav class="navbar navbar-default text-center nomh" role="navigation">
+            <div class="collapse navbar-collapse">
+                <ul class="nav nav-pills nav-justified">
+                    <li><a href="index.html">Главная</a>
+                    </li>
+                    <li><a href="catalog.html">Каталог</a>
+                    </li>
+                    <li><a href="feedback.html">Обратная связь</a>
+                    </li>
+                </ul>
+            </div>
+    </nav>
+
+    <main>
+        <div class="container feedback-contacts">
+            <div class="row text-center">
+                <div class="col-xs-4">
+                    Адрес:
+                    <br><strong>г.Киев, пр.Ватутина 6а</strong>
+                </div>
+                <div class="col-xs-4">
+                    Телефоны:
+                    <ul class="list-unstyled">
+                        <li><strong>+38(050)347-76-13</strong></li>
+                        <li><strong>+38(044)344-75-16</strong></li>
+                    </ul>
+                </div>
+                <div class="col-xs-4">
+                    E-Mail:
+                    <br>
+                    <a href="mailto:mail@mail.ua"><strong>mail@mail.ua</strong></a>
+                </div>
+            </div>
+        </div>
+        <div id="map-wrapper" class="container">
+            <div class="row">
+                <div class="col-xs-1"></div>
+                <div class="col-xs-10" id="map"></div>
+                <div class="col-xs-1"></div>
+            </div>
+        </div>
+        <form class="form-group container width50" role="form">
+            <div class="row">
+                <div class="form-group col-xs-6 np">
+                    <label class="sr-only" for="nameInput">Имя</label>
+                    <input class="form-control" id="nameInput" placeholder="Ваше имя">
+                </div>
+                <div class="form-group col-xs-6 np">
+                    <label class="sr-only" for="emailInput">E-Mail</label>
+                    <input type="email" class="form-control" id="emailInput" placeholder="Ваш E-Mail">
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-xs-12 np">
+                    <label class="sr-only" for="mainTextInput">Вопрос</label>
+                    <textarea class="form-control" id="mainTextInput" rows="3" placeholder="Ваш вопрос"></textarea>
+                </div>
+            </div>
+            <div class="row pl15">
+                <button type="submit" class="btn btn-default">Отправить</button>
+            </div>
+        </form>
+    </main>
+
+    <footer class="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <p class="col-xs-4"></p>
+                <p class="col-xs-4 text-muted text-center">
+                    &copy; 2013-2014
+                    <strong>Мебельная фирма</strong>
+                </p>
+                <p class="col-xs-4"></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/ymap.js"></script>
+</body>
+
+</html>
