@@ -1,4 +1,4 @@
-<nav class="navbar navbar-default text-center nomh" role="navigation">
+<nav class="navbar navbar-default container text-center nomh" role="navigation">
     <div class="collapse navbar-collapse">
         <ul class="nav nav-pills nav-justified">
             <li><a href="index.php">Главная</a>

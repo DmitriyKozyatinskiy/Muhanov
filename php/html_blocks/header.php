@@ -1,4 +1,4 @@
-<header class="container-fluid">
+<header class="container">
     <div class="row">
         <div class="col-xs-3" id="logo">
             <a href="index.php">

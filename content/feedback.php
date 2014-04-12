@@ -1,5 +1,4 @@
-<div class="container feedback-contacts">
-    <div class="row text-center">
+<div class="row text-center feedback-contacts">
         <div class="col-xs-4">
             Адрес:
             <br>
@@ -23,28 +22,25 @@
                 <strong>mail@mail.ua</strong>
             </a>
         </div>
-    </div>
 </div>
-<div id="map-wrapper" class="container">
-    <div class="row">
+<div id="map-wrapper" class="row">
         <div class="col-xs-1"></div>
         <div class="col-xs-10" id="map"></div>
         <div class="col-xs-1"></div>
-    </div>
 </div>
 <form class="form-group container width50" role="form">
     <div class="row">
-        <div class="form-group col-xs-6 np">
+        <div class="form-group col-xs-6">
             <label class="sr-only" for="nameInput">Имя</label>
             <input class="form-control" id="nameInput" placeholder="Ваше имя">
         </div>
-        <div class="form-group col-xs-6 np">
+        <div class="form-group col-xs-6">
             <label class="sr-only" for="emailInput">E-Mail</label>
             <input type="email" class="form-control" id="emailInput" placeholder="Ваш E-Mail">
         </div>
     </div>
     <div class="row">
-        <div class="form-group col-xs-12 np">
+        <div class="form-group col-xs-12">
             <label class="sr-only" for="mainTextInput">Вопрос</label>
             <textarea class="form-control" id="mainTextInput" rows="3" placeholder="Ваш вопрос"></textarea>
         </div>
