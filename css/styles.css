@@ -1,22 +1,25 @@
-body {padding-top: 10px; color: black;}
+body {padding: 10px 0; color: black;}
 .wrapper{min-height: 752px;}
-header{padding-top: 10px; background-color: #fff;}
+header{padding-top: 10px; background-color: #F8F8F8;}
+main{padding-top: 15px; background-color: #F8F8F8;}
+footer{margin-top: 20px; position: relative; bottom: 0; width: 100%; height: auto; background-color: #1e1e1e; color: #fff;}
+
 header .row > div {height: 90px;}
 nav{background-color: #fff;}
-nav ul{width: 100%;}
-footer{border-top: 1px solid transparent; border-bottom: 1px solid transparent; border-color: #e7e7e7; margin-top: 20px; position: relative; bottom: 0; width: 100%; height: auto; background-color: #f8f8f8;}
+nav ul{width: 100%; font-weight: bold;}
 footer p{padding-top: 1%;}
-.navbar{border-radius: 0 !important;}
-#map-wrapper{padding-bottom: 30px;}
-#map{height: 400px;}
-.contacts{padding-right: 30px;}
-.feedback-contacts{margin-bottom: 10px;}
 textarea{resize: vertical;}
+.navbar{border-radius: 0;}
+/*--contacts--*/
+.contacts{padding-right: 30px; font-size: 140%; font-weight: bold;}
+.feedback-contacts{margin-bottom: 10px;}
+.map{height: 400px;}
+/*--carousel--*/
 .carousel-left-custom{left: 0; right: auto;}
 .carousel-right-custom{right: 0; left: auto;}
-.catalog-main{height: 280px;}
+/*--catalog--*/
+.catalog-item-wrap{background-color: #fff; padding-top: 15px;}
+.catalog-item-inside{height: 280px;}
+/*-----------*/
 aside{height: 500px; background-color: #f8f8f8; border: 1px solid #e7e7e7;}
-//#logo{background-image: url(../img/logo.png);}
 body{background-image:url(../img/bg/wood3.jpg);}
-main{padding-top: 15px; background-color: #fff;}
-$main{background-image:url(../img/bg/wood3.jpg);}
